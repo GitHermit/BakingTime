@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Fragment layout that displays a baking recipe -->
+<android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/baking_fragment_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/recipe_step_image"
+        app:layout_constraintBottom_toTopOf="@id/description_header"
+        android:layout_height="wrap_content" />
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/exo_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:id="@+id/description_header"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/description_text"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        app:layout_constraintTop_toBottomOf="@id/description_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/exo_play"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:resize_mode="fixed_width"
+            app:layout_constraintBottom_toTopOf="@id/description_header"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

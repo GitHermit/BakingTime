@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Baking Time</string>
+    <string name="detail_error_message">Recipe not available</string>
+    <string name="ingredients">Recipe Ingredients</string>
+    <string name="description">Description:</string>
+    <string name="go_to_next_step">Go to Next Step</string>
+    <string name="appwidget_text">Add a Recipe</string>
+    <string name="add_widget">Add widget</string>
+    <string name="widget">Add to Widget</string>
+    <string name="widget_removal">Remove from widget</string>
+    <string name="widget_replacement">Replace widget recipe</string>
+    <string name="added_to_widget">Added to widget successfully</string>
+    <string name="updated_to_widget">Updated widget successfully</string>
+    <string name="removed_from_widget">Removed from widget successfully</string>
+    <string name="add_a_recipe">Add A Recipe!</string>
+</resources>

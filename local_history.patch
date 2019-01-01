@@ -1,0 +1,35 @@
+Index: app/src/main/java/com/example/android/bakingtime/RecipeActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/android/bakingtime/RecipeActivity.java	(date 1532313365858)
++++ app/src/main/java/com/example/android/bakingtime/RecipeActivity.java	(date 1532313365858)
+@@ -101,26 +101,14 @@
+             launchStepActivity(position);
+         }
+         else if (position == 0) {
+-//            if (mediaFragment != null && descriptionFragment != null) {
+-////                getSupportFragmentManager().beginTransaction().remove(mediaFragment).remove(descriptionFragment).commit();
+-//            }
+-//            else if (descriptionFragment != null) {
+-//                getSupportFragmentManager().beginTransaction().remove(descriptionFragment).commit();
+-//            }
+             ingredientListFragment.setQuantity(recipe.getQuantity());
+             ingredientListFragment.setMeasurements(recipe.getMeasure());
+             ingredientListFragment.setIngredients(recipe.getIngredient());
+             getSupportFragmentManager().beginTransaction().replace(R.id.activity_container, ingredientListFragment).commit();
+-//            getSupportFragmentManager().beginTransaction().replace(R.id.ingredient_list_container, ingredientListFragment)
+-//                    .commit();
+         }
+         else {
+             getSupportFragmentManager().executePendingTransactions();
+-//            Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.activity_container);
+-//            getSupportFragmentManager().beginTransaction().remove(fragment).commit();
+-//            if (ingredientFragment != null) {
+-//                getSupportFragmentManager().beginTransaction().remove(ingredientFragment).commit();
+-//            }
++
+             bakingFragment.setDescription(recipe.getDescription().get(position - 1));
+ //            BakingRecipeFragment bakingRecipeFragment = new BakingRecipeFragment();
+ //            bakingRecipeFragment.setDescription(recipe.getDescription().get(position-1));
